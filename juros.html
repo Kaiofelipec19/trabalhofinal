@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/app/app.js"></script>
+    <title>DicasFinanceiras</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+        <a id="logotipo" href="index.html"><p>Dicas<strong>financeiras</strong></p></a>
+        <img id="if" src="assets/img/logo.png" alt="">
+            <ul class="nav-menu">
+              <li class="nav-itens" ><a class="nav-links" href="tesouro.html">Tesouro</a></li>
+              <li class="nav-itens" ><a class="nav-links" href="primeiroinvestimento.html">investimento</a></li>
+              <li class="nav-itens" ><a class="nav-links" href="juros.html">juros</a></li>
+              <li class="nav-itens" ><a class="nav-links" href="materiais.html">Dicas</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main id="sub-main">
+      <section id="principal">
+        <h1 id="titulo" >entendo juros compostos</h1>
+        <p id="texto-informativo">
+          Os juros compostos são uma forma de cálculo de juros em que a taxa de juros incide não apenas sobre o capital inicial, 
+          mas também sobre os juros acumulados ao longo do tempo. Em outras palavras, os juros compostos geram ganhos não apenas 
+          sobre o principal investido, mas também sobre os juros já incorporados ao montante total.
+          Ao contrário dos juros simples, que são calculados apenas sobre o valor inicial do investimento, 
+          os juros compostos têm um efeito multiplicador, permitindo que o montante total cresça de maneira mais acelerada.
+          Esse processo cria uma curva de crescimento exponencial, tornando os juros compostos uma ferramenta poderosa para o crescimento do capital ao longo do tempo.
+        </p>
+        <img src="assets/img/formula.webp" alt="">
+      </section>
+      <section id="sub">
+        <h2>simulador de juros compostos</h2>
+        <form action="calc">
+  
+          <label for="valor-inicial">
+              Investimento inicial
+              <input id="ValorInivial" type="number">
+          </label>
+  
+          <label for="taxa">
+              Porcentagem de juros aplicada
+              <input id="juros" type="number">
+          </label>
+  
+          <label for="meses">
+            Numero de anos da aplicação
+              <input id="meses" type="number">
+          </label>
+  
+          <label for="resultado">
+              Total
+              <input type="text" id="resultado">
+          </label>
+  
+          <input type="button" id="btn" value="Calcular">
+        </form>
+      </section>
+      <a id="volta" href="index.html">voltar</a>
+    </main>
+    <footer>
+        <h1>Instituto Federal de Mato Grosso do Sul - Campus Dourados</h1>
+        <p>desenvolvido por kaio felipe e Jose Carlos Godoi Filho</p>
+    </footer>
+</body></html>
